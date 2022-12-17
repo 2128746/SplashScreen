@@ -3,7 +3,7 @@
 
 # Program name: script.bash
 
-isDigital=true
+isDigital=false
 location=
 
 drawDigit() {
@@ -18,7 +18,7 @@ drawDigit() {
 
     
 
-    input="numbers/${file}"
+    input="$HOME/SplashScreen/numbers/${file}"
 
     i=0
 
@@ -225,7 +225,7 @@ redraw() {
     sleep 0.5
 
     else
-    ./tclock
+    $HOME/SplashScreen/tclock
 
     exit
     fi

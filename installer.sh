@@ -11,7 +11,7 @@ read clock_type
 if [ "$clock_type" = "a" ]; then
   sed -i '6s/.*/isDigital=false/' ./SplashScreen/script.bash
 else
-  sed -i '6s/.*/analog=true/' ./SplashScreen/script.bash
+  sed -i '6s/.*/isDigital=true/' ./SplashScreen/script.bash
 fi
 
 # Ask the user if they want to use their IP or a specific city for the weather
