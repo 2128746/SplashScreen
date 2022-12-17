@@ -24,7 +24,7 @@ if [ "$weather_type" = "ip" ]; then
 else
   echo "Enter the city you want to use for the weather: "
   read city
-  sed -i "7s/.*/location='$city'/" script.bash
+  sed -i "7s/.*/location='$city'/" ./SplashScreen/script.bash
 fi
 # Add a reference to script.bash in the bashrc file
 echo "bash ~/splashscreen/script.bash" >> ~/.bashrc
